@@ -30,11 +30,11 @@ public class Gameplay {
         String pickup;
 
         instructions();
-        System.out.print("Enter com.stettler.scopa.Player #1 name: ");
+        System.out.print("Enter Player #1 name: ");
         player1.setName(input.nextLine());
         player1.setName(nameCheck(player1.getName()));
 
-        System.out.print("Enter com.stettler.scopa.Player #2 name: ");
+        System.out.print("Enter Player #2 name: ");
         player2.setName(input.nextLine());
         player2.setName(nameCheck(player2.getName()));
 
