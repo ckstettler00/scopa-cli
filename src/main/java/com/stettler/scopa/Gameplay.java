@@ -126,7 +126,7 @@ public class Gameplay {
 
     public Move createMoveCommand(int play, List<String> pickups) {
 
-        if (play > this.currentPlayer.getHand().size()) {
+        if (play > this.currentPlayer.getHand().size() || play < 1) {
             System.out.println(String.format("You don't have that card. Valid entry is 1 to %d", this.currentPlayer.getHand().size()));
             return Move.INVALID;
         }
